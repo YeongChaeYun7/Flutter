@@ -25,7 +25,23 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold( // Scaffold 위젯은 appbar, title, body 속성 지정
         appBar: AppBar(
-          title: Text('Welcome to Flutter'),
+          title: Text('Welcome to Flutter',
+          style: TextStyle( //앱바 타이틀의 텍스트 스타일 설정
+            fontSize: 22,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
+          ),
+          actions: [ // 앱바에 아이콘 추가
+            Icon(Icons.shopping_cart), // 쇼핑카트 아이콘
+            SizedBox(width: 10),// 위젯 간 여백 조정
+            Icon(Icons.search_rounded,
+            color: Colors.redAccent,),// 검색 아이콘, 색상 변경
+            SizedBox(width: 10),
+            Icon(Icons.settings,
+            color: Colors.purpleAccent,), // ,설정 아이콘, 색상 변경
+            SizedBox(width: 10),
+          ],
         ),
       body: Center(
         child: Text('Hello world',
