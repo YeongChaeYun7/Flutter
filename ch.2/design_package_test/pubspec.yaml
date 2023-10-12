@@ -30,7 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-    uses-material-design: true # 머터리얼 디자인 2,3
+    uses-material-design: true # 머터리얼 디자인 2,3. 기본 값은 false
 
 
   # The following adds the Cupertino Icons font to your application.
